@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="C:\Users\Axel\Pictures\Icons\iconfinder_web-browser-on-laptop_4417111 (1).png"
+        type="image/x-icon">
+    <title>Для навчання</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <ul class="top-menu">
+                <li>
+                    <a href="http://www.iek.irpin.com/">Сайт коледжу</a>
+                </li>
+                <li class="moodle"><a href="https://iekportal.com.ua/my/">Moodle</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class=" container">
+        <div class="row">
+            <div class="content col-1">
+                <div class="inner">
+                    <div class="content">
+                        
+                        <div class="math">
+                            <h1 class="bottom-line">Теорія ймовірності</h1>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!--------------------------------------------------------------------------------------------------->
+            <div class="side-bar col-2">
+                <div class="rozklad">
+                    <h1 class="">Розклад</h1>
+                    <ul class="rozklad-contnent ">
+                        <li><a
+                                href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTl4XRsk2pxPAAumyB-0l2au3dkO7jC1PDeaTvctjBBU9HOpXyYwapoE_1PNlZsjrFDKFrpj-HK3oDK/pubhtml">Понеділок</a>
+                        </li>
+                        <li><a
+                                href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQNDy6kP_Er32th8XuYpJRKI26iFJiauYR7IY7L-Kqfhu_SYYLUs3hg1MSzWHw2bglOLhwcXgYBiwJD/pubhtml">Вівторок</a>
+                        </li>
+                        <li><a
+                                href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRpSkr059jyQUZv7HPp813kYED2fmigy14J8fThJ1Eo-6sEixrsjCezT281QCs0eMXBw4oSBoIFqhGM/pubhtml">Середа</a>
+                        </li>
+                        <li><a
+                                href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRDA31eofItYZ5nQWwfvF26yq8Snig-oGbtdisOuAm2Ur0-v1h-Qwdmh3-eT3nQGRKW1e7D7KQ2UjUq/pubhtml">Четвер</a>
+                        </li>
+                        <li><a
+                                href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTwv0DHzrT97qJvh7lBovx6BubKJIO_gk_Lesgyn22RlxMclC3z1OW6TKJDhFe1CBJ6fGDSUcciZXzX/pubhtml">П'ятниця</a>
+                        </li>
+                        <li><a
+                                href="https://docs.google.com/spreadsheets/d/e/2PACX-1vScVScHS0fxSDzdeJwVFgTXo0mSfgZ-Z65KzCLc1bcsX-73tI4UW4Fie8CMpCMVdTD34JNNoM0-oN-7/pubhtml">Субота</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+</body>
+
+<style>
+    .math{
+        text-align: left;
+    }
+
+    /*------------------------------------------*/
+    .rozklad h1{
+        font-size: 35px;
+        color: #fdb622;
+        margin-bottom: 25px;
+    }
+    .rozklad-contnent li{
+        margin-bottom: 8px;
+    }
+
+    .rozklad-contnent a{
+        text-decoration: none;
+        font-size: 25px;
+        font-weight: 800;
+        
+    }
+
+    .rozklad-contnent a:hover {
+        color: #8ac832;
+    }
+
+    .rozklad-contnent a:hover::after {
+        transform: scaleX(1);
+        transform-origin: left;
+    }
+
+    .rozklad-contnent a::after {
+        content: "";
+        display: block;
+        height: 3px;
+        border-radius: 10px;
+        transform: scaleX(0);
+        transform-origin: 100% 0;
+        background: #8ac832;
+        transition: .4s transform;
+        width: 100%;
+    }
+    
+    .side-bar{
+        float: right;
+        box-shadow: 0 6px 15px 2px rgba(0,0,0,.54);
+        background-color: #1b1e20;
+       /* background-color: #0c1013;*/
+       
+        width: 328px;
+        height: 100vh;
+    }
+
+
+    .row {
+        display: flex;
+    }
+
+    .inner {
+        min-height: 100px;
+
+    }
+
+    
+
+    body {
+        text-align: center;
+        background-color: #1f2326;
+        color: white;
+        font-family: sans-serif;
+    }
+
+    a {
+        color: white;
+    }
+
+    ul {
+        list-style-type: none;
+        margin-top: 0;
+        padding: 0;
+    }
+
+    h1 {
+        
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+    /*Header*/
+
+    header {
+        height: 80px;
+        background-color: #0c1013;
+        box-shadow: 0 0 19px 2px rgba(0, 0, 0, .91);
+        z-index: 2;
+
+    }
+
+    .container {
+        width: 1400px;
+        margin: 0 auto;
+    }
+
+    .top-menu {
+        display: flex;
+       
+    }
+
+    .top-menu li {
+        font-size: 25px;
+        margin-right: 25px;
+        padding: 10px 0;
+        padding-top: 20px;
+        text-transform: uppercase;
+        font-weight: 800;
+    }
+
+    .top-menu a {
+        text-decoration: none;
+    }
+
+    .top-menu a:hover {
+        color: #8ac832;
+    }
+
+    .top-menu a:hover::after {
+        transform: scaleX(1);
+        transform-origin: left;
+    }
+
+    .top-menu a::after {
+        content: "";
+        display: block;
+        height: 3px;
+        border-radius: 10px;
+        transform: scaleX(0);
+        transform-origin: 100% 0;
+        background: #8ac832;
+        transition: .4s transform;
+        width: 100%;
+    }
+
+    .moodle a {
+        text-transform: none;
+        color: #fdb622;
+    }
+
+    .col-1 {
+        width: 1000px;
+        float: left;
+        
+    }
+
+    .col-2 {
+        float: left;
+        width: 300px;
+        height: 800px;
+        
+    }
+</style>
+
+</html>
