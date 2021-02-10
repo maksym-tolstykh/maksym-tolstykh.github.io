@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="C:\Users\Axel\Pictures\Icons\iconfinder_web-browser-on-laptop_4417111 (1).png"
+    <link rel="shortcut icon" href=" "
         type="image/x-icon">
     <title>Для навчання</title>
 </head>
@@ -13,7 +13,8 @@
 
     <header>
         <div class="container">
-            <ul class="top-menu">
+            <nav id="menu">
+            <ul  class="top-menu">
                 <li>
                     <a href="http://www.iek.irpin.com/">Сайт коледжу</a>
                 </li>
@@ -27,6 +28,7 @@
                     <a href="#calc">Калькулятори</a>
                 </li>
             </ul>
+        </nav>
         </div>
     </header>
 
@@ -47,7 +49,18 @@
                                 target="_blank">Комп’ютерна схемотехніка</a></h1>
 
                     </div>
-
+                    <!------------------------------------------------------>
+                    <hr>
+                    <!------------------------------------------------------>
+                    <div class="comp-sxem">
+                        <h1 class="main-title"><a href="https://iekportal.com.ua/course/view.php?id=50"
+                                target="_blank">Комп’ютерна електроніка</a></h1>
+                                <div>
+                                    <ul class="list">
+                                        <li><a href="https://www.translatorscafe.com/unit-converter/RU/current/?redir=teaser"><img height="50px" src="https://editor.tinkercad.com/assets_2eativ4/js/tinkercad-frontend/assets/images/tinkercad-lockup-color.svg" alt=""></a></li>
+                                    </ul>
+                                </div>
+                    </div>
                     <!------------------------------------------------------>
                     <hr>
                     <!------------------------------------------------------>
@@ -116,6 +129,7 @@
 <style>
     .list{
         text-align: left;
+        list-style-type: decimal;
     }
 
     .list a:hover{
@@ -134,8 +148,15 @@
 
 
     /**/
+    .main-title{
+        margin-bottom: 20px;
+    }
+    .main-title{
+
+    }
     .main-title a {
         text-decoration: none;
+        
     }
 
     .main-title a:hover {
@@ -308,4 +329,20 @@
     }
 </style>
 
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+   <!-- slow scroll -->
+<script "text/javascript"> 
+     $(document).ready(function(){
+    $("#menu").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1500);
+    });
+});
+
+</script>
 </html>
