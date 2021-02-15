@@ -11,14 +11,14 @@
 <body>
 
     <header>
-        <div class="container"> 
-                <ul class="top-menu">
-                    <li>
-                        <a target="_blank" href="http://www.iek.irpin.com/">Сайт коледжу</a>
-                    </li>
-                    <li class="moodle"><a target="_blank" href="https://iekportal.com.ua/my/">Moodle</a>
-                    </li>
-                    <div id="menu">
+        <div class="container">
+            <ul class="top-menu">
+                <li>
+                    <a target="_blank" href="http://www.iek.irpin.com/">Сайт коледжу</a>
+                </li>
+                <li class="moodle"><a target="_blank" href="https://iekportal.com.ua/my/">Moodle</a>
+                </li>
+                <div id="menu">
                     <li>
                         <a href="#converters">Конвертери</a>
                     </li>
@@ -27,8 +27,8 @@
                         <a href="#calc">Калькулятори</a>
                     </li>
                 </div>
-                </ul>
-            
+            </ul>
+
         </div>
     </header>
 
@@ -47,14 +47,18 @@
                     <div class="comp-sxem">
                         <h1 class="main-title"><a href="https://iekportal.com.ua/course/view.php?id=50"
                                 target="_blank">Комп’ютерна схемотехніка</a></h1>
-                            <ul class="list">
-                                <li>
-                                    <a target="blank" href="https://iekportal.com.ua/mod/resource/view.php?id=4885"><img src="https://iekportal.com.ua/theme/image.php?theme=classic&component=core&rev=1609411939&image=f%2Fdocument-24" alt="">    Титульна сторінка до лабораторних</a>
-                                </li>
-                                <li>
-                                    <a href="https://iekportal.com.ua/mod/url/view.php?id=4881"><img src="https://iekportal.com.ua/theme/image.php?theme=classic&component=url&rev=1609411939&image=icon" alt=""> Multisim 13.0.1</a>
-                                </li>
-                            </ul>
+                        <ul class="list">
+                            <li>
+                                <a target="blank" href="https://iekportal.com.ua/mod/resource/view.php?id=4885"><img
+                                        src="https://iekportal.com.ua/theme/image.php?theme=classic&component=core&rev=1609411939&image=f%2Fdocument-24"
+                                        alt=""> Титульна сторінка до лабораторних</a>
+                            </li>
+                            <li>
+                                <a href="https://iekportal.com.ua/mod/url/view.php?id=4881"><img
+                                        src="https://iekportal.com.ua/theme/image.php?theme=classic&component=url&rev=1609411939&image=icon"
+                                        alt=""> Multisim 13.0.1</a>
+                            </li>
+                        </ul>
                     </div>
                     <!------------------------------------------------------>
                     <hr>
@@ -96,8 +100,8 @@
                     <div id="calc">
                         <h1 class="main-title">Калькулятори</h1>
                         <ul class="list">
-                            <li><a target="_blank"
-                                    href="https://math.semestr.ru/kramer/kramer.php">Aлгоритм метода Крамера</a></li>
+                            <li><a target="_blank" href="https://math.semestr.ru/kramer/kramer.php">Aлгоритм метода
+                                    Крамера</a></li>
                         </ul>
                     </div>
 
@@ -139,19 +143,21 @@
 
 
 
-
+    <div id="topNubex"><img src="https://ps.w.org/back-to-the-top-button/assets/icon-256x256.png?rev=2283756" /></div>
+    
 
 </body>
 
 <style>
-    #menu{
+    #menu {
         display: flex;
     }
+
     /**/
     .list {
         text-align: left;
         list-style-type: decimal;
-        
+
     }
 
     .list li {
@@ -358,6 +364,20 @@
         height: 800px;
 
     }
+
+    /**/
+    #topNubex {
+        position: fixed;
+        right: 45px;
+        bottom: 45px;
+    }
+
+    #topNubex img {
+        width: 35px;
+        height: 35px;
+    }
+
+    /**/
 </style>
 
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -374,5 +394,20 @@
     });
 
 </script>
+
+<script type="text/javascript">
+    $(function() {
+    $(window).scroll(function() {
+    if($(this).scrollTop() != 0) {
+    $('#topNubex').fadeIn();
+    } else {
+    $('#topNubex').fadeOut();
+    }
+    });
+    $('#topNubex').click(function() {
+    $('body,html').animate({scrollTop:0},700);
+    });
+    });
+    </script>
 
 </html>
