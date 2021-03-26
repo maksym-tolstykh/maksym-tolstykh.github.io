@@ -330,7 +330,9 @@ header a {
   background: #FFF7F7;
 }
 .copyright {
-  padding: 29px 60px;
+  padding-top: 29px;
+  padding-right:60px;
+  padding-left:60px;
   padding-bottom: 0;
 }
 .copyright-txt {
