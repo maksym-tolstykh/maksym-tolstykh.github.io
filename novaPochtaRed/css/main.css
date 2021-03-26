@@ -331,6 +331,7 @@ header a {
 }
 .copyright {
   padding: 29px 60px;
+  padding-bottom: 0;
 }
 .copyright-txt {
   display: -webkit-box;
