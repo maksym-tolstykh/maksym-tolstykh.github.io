@@ -260,7 +260,8 @@ p {
 
 .block_popular-destination {
     height: 1120px;
-    background: url("../images/waveBG.png") center no-repeat;
+    background: url("../images/waveBG.png") repeat;
+    background-repeat: round;
     padding: 50px 0;
 }
 

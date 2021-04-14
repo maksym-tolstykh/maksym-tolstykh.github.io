@@ -1,5 +1,6 @@
 body {
   background-color: white;
+  overflow-x: hidden;
   font-size: 14px;
   font-family: 'Roboto', sans-serif;
   color: black;
@@ -15,6 +16,9 @@ body {
 
 p {
   margin: 0; }
+
+footer {
+  display: block; }
 
 .header {
   height: 70px;
@@ -325,10 +329,30 @@ p {
   font-weight: 300;
   line-height: 23px; }
 
+/*@import "blocks/reset.scss";*/
+.block_our-services {
+  background: rgba(251, 146, 87, 0.05);
+  height: 730px; }
+  .block_our-services .container {
+    padding: 50px;
+    display: flex;
+    justify-content: space-between; }
+
+.our-services_list {
+  padding: 0; }
+
+.our-services_item {
+  display: flex;
+  margin-bottom: 20px; }
+  .our-services_item p {
+    padding-top: 10px;
+    padding-left: 15px; }
+
 .footer {
   overflow: hidden;
   height: 125px;
-  background: #302F2F;
+  background-color: #302F2F;
+  text-align: center;
   padding: 75px 0; }
   .footer li {
     list-style: none; }
@@ -375,3 +399,6 @@ p {
   margin-top: 12px; }
   .footer_socials a {
     margin-right: 8.7px; }
+
+*, ::after, ::before {
+  box-sizing: border-box; }
