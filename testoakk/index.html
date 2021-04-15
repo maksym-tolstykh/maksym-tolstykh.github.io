@@ -48,7 +48,7 @@
                 <div class="nav_block">
                     <nav>
                         <div class="nav">
-                            <ul class="nav-btn">
+                            <ul id="menu" class="nav-btn">
                                 <li class="nav-link">
                                     <a class="nav-btn" href="#destination">Популярні напрямки</a>
                                 </li>
@@ -460,10 +460,10 @@
         
                             <li>
                                 <div class="footer_socials">
-                                    <a href="#"  target="_blank"><img src="/assets/images/viber.svg" alt="viber"></a>
-                                    <a href="#"  target="_blank"><img src="/assets/images/telegram.svg" alt="telegram"></a>
-                                    <a href="#"  target="_blank"><img src="/assets/images/instagram.svg" alt="instagram"></a>
-                                    <a href="#"  target="_blank"><img src="/assets/images/facebook.svg" alt="facebook"></a>
+                                    <a href="#"  target="_blank"><img src="assets/images/viber.svg" alt="viber"></a>
+                                    <a href="#"  target="_blank"><img src="assets/images/telegram.svg" alt="telegram"></a>
+                                    <a href="#"  target="_blank"><img src="assets/images/instagram.svg" alt="instagram"></a>
+                                    <a href="#"  target="_blank"><img src="assets/images/facebook.svg" alt="facebook"></a>
                                 </div>
                             </li>
                         </ul>
@@ -473,19 +473,19 @@
                    
                 </div>
                 <div class="footer_socials-mobile">
-                    <a href="#"  target="_blank"><img src="/assets/images/viber.svg" alt="viber"></a>
-                    <a href="#"  target="_blank"><img src="/assets/images/telegram.svg" alt="telegram"></a>
-                    <a href="#"  target="_blank"><img src="/assets/images/instagram.svg" alt="instagram"></a>
-                    <a href="#"  target="_blank"><img src="/assets/images/facebook.svg" alt="facebook"></a>
+                    <a href="#"  target="_blank"><img src="assets/images/viber.svg" alt="viber"></a>
+                    <a href="#"  target="_blank"><img src="assets/images/telegram.svg" alt="telegram"></a>
+                    <a href="#"  target="_blank"><img src="assets/images/instagram.svg" alt="instagram"></a>
+                    <a href="#"  target="_blank"><img src="assets/images/facebook.svg" alt="facebook"></a>
                 </div>
             </div>
         </footer>
    
-        <div id="topNubex"><img src="/assets/images/SlideUP.svg"></div>
+        <div id="topNubex"><img src="assets/images/SlideUP.svg"></div>
     </div>
 
     <script src="assets/js/app.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script type="text/javascript">
         $(function() {
         $(window).scroll(function() {
@@ -500,5 +500,17 @@
         });
         });
         </script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#menu").on("click", "a", function (event) {
+            event.preventDefault();
+            var id = $(this).attr('href'),
+                top = $(id).offset().top;
+            $('body,html').animate({ scrollTop: top }, 1080);
+        });
+    });
+
+</script>
 </body>
 </html>
