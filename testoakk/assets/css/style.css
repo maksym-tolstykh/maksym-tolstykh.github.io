@@ -9,7 +9,7 @@ body {
 
 .container {
     max-width: 1170px;
-    min-width: 360px;
+    min-width: 1169px;
     margin: 0 auto;
 }
 
@@ -511,7 +511,7 @@ footer {
 }
 
 .footer {
-    /*overflow: hidden;*/
+    overflow: hidden;
     height: 125px;
     background-color: #302F2F;
     text-align: center;
