@@ -8,8 +8,8 @@ body {
 
 .container {
   max-width: 1170px;
-  min-width: 240px;
-  padding: 0 15px;
+  min-width: 200px;
+  /* padding: 0 15px;*/
   margin: 0 auto; }
 
 @media (max-width: 1020px) {
@@ -191,7 +191,11 @@ footer {
 
 .nav-btn-mobile {
   display: none;
-  width: 160px; }
+  width: 160px;
+  padding: 0; }
+
+.header_logo_noLink {
+  display: none; }
 
 @media (max-width: 1020px) {
   .nav {
@@ -206,20 +210,43 @@ footer {
   .nav-btn {
     display: none; }
   .nav-btn-mobile {
-    margin: 0;
     display: block; }
   .nav-btn-mobile_item {
     list-style-type: none; }
     .nav-btn-mobile_item a {
       text-decoration: none;
       padding: 10px 7px;
+      font-size: 13px;
       color: #000;
       border: 1px solid #F58220;
       border-radius: 8px; } }
 
 @media (max-width: 520px) {
+  .header {
+    justify-content: space-around;
+    padding: 0; }
+  .header_logo_noLink {
+    display: block; }
+    .header_logo_noLink img {
+      width: 120px; }
+  .header_left {
+    display: none; }
   .work-time {
+    display: none; }
+  .nav {
     display: none; } }
+
+@media (max-width: 320px) {
+  .header {
+    padding: 0; }
+  .nav_block {
+    padding: 0;
+    width: 118px; }
+  .nav-btn-mobile {
+    width: 140px; }
+  .nav-btn-mobile_item a {
+    font-size: 12px;
+    padding: 7px 4px; } }
 
 .banner_block .container {
   display: flex;
@@ -246,6 +273,14 @@ footer {
   .banner_title {
     line-height: 42px;
     font-size: 50px; }
+  .banner-text {
+    font-size: 13px;
+    line-height: 15px; } }
+
+@media (max-width: 320px) {
+  .banner_title {
+    font-size: 45px;
+    line-height: 42px; }
   .banner-text {
     font-size: 13px;
     line-height: 15px; } }
