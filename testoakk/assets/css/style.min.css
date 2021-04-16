@@ -307,7 +307,9 @@ footer {
 
 .block_popular-destination_title {
   margin-top: 30px;
-  margin-bottom: 37px; }
+  margin-bottom: 37px;
+  text-align: center;
+  font-size: 44px; }
 
 .popular-destination_list {
   display: grid;
@@ -558,7 +560,7 @@ footer {
     padding: 5px; } }
 
 .block_find-us {
-  padding: 100px 0; }
+  padding: 65px 0; }
 
 .find-us_informations {
   display: flex;
@@ -568,7 +570,8 @@ footer {
   font-weight: bold;
   font-size: 65px;
   line-height: 89px;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  margin-top: 0; }
 
 .find-us_item-adress {
   font-weight: 400;
