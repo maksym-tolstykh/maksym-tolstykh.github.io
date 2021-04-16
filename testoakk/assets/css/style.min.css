@@ -209,10 +209,13 @@ footer {
     display: none; } }
 
 @media (max-width: 770px) {
+  .nav {
+    padding: 5px; }
   .nav-btn {
     display: none; }
   .nav-btn-mobile {
-    display: block; }
+    display: flex;
+    justify-content: right; }
   .nav-btn-mobile_item {
     list-style-type: none; }
     .nav-btn-mobile_item a {
@@ -224,6 +227,8 @@ footer {
       border-radius: 8px; } }
 
 @media (max-width: 520px) {
+  .nav_block {
+    padding-right: 0; }
   .header {
     justify-content: space-around;
     padding: 0; }
@@ -240,12 +245,14 @@ footer {
 
 @media (max-width: 320px) {
   .header {
-    padding: 0; }
+    padding: 0;
+    justify-content: space-around; }
   .nav_block {
     padding: 0;
     width: 118px; }
   .nav-btn-mobile {
-    width: 140px; }
+    width: 140px;
+    margin-left: -24px; }
   .nav-btn-mobile_item a {
     font-size: 12px;
     padding: 7px 4px; } }
@@ -445,6 +452,7 @@ footer {
   height: 263px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   background: #FFF2E7;
+  border-radius: 20px 20px 8px 8px;
   /*padding-top: 112px;*/ }
 
 .main-color {
@@ -465,7 +473,14 @@ footer {
   font-weight: 400;
   line-height: 23px; }
 
+.mobile_our_team {
+  display: none; }
+
 @media (max-width: 1020px) {
+  .pc_our_team {
+    display: none; }
+  .mobile_our_team {
+    display: block; }
   .our-team_list {
     display: grid;
     grid-template-columns: 300px 300px;
@@ -474,6 +489,8 @@ footer {
     justify-content: center; } }
 
 @media (max-width: 689px) {
+  .block_our-team {
+    display: none; }
   .our-team_list {
     display: grid;
     grid-template-columns: 300px;
@@ -650,7 +667,8 @@ footer {
     font-weight: normal;
     font-size: 18px;
     line-height: 21px;
-    color: #B0B0B0; }
+    color: #B0B0B0;
+    padding-bottom: 15px; }
 
 .footer_numbers {
   padding-top: 18px;

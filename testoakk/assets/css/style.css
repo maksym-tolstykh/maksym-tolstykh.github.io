@@ -272,9 +272,13 @@ footer {
         margin-top: 5px;
         margin-right: 24px;
     }
+
+    .work-time_block {
+        display: none;
+    }
 }
 
-@media (max-width: 899px) {
+@media (max-width: 770px) {
     .nav-btn {
         display: none;
     }
@@ -370,6 +374,10 @@ footer {
 @media (max-width: 899px) {
     .banner_block-right {
         display: none;
+    }
+
+    .banner_title {
+        padding: 0;
     }
 }
 
