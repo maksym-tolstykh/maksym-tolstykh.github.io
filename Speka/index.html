@@ -472,29 +472,31 @@
                 <div class="footer_content">
                     <div class="footer_logo_block">
                         <div class="logo">
-                            <img src="assets/images/Logo-Footer.svg" alt="">
+                            <a href="index.html"><img src="assets/images/Logo-Footer.svg" alt=""></a>
                         </div>
                     </div>
         
-                    <div class="footer_nav">
-                        <ul>
-                            <li>
-                                <a href="#advices">Наші переваги</a>
-                            </li>
-        
-                            <li>
-                                <a href="#contnact">Контакти</a>
-                            </li>
-        
-                            <li>
-                                <a href="#destination">Популярні напрямки</a>
-                            </li>
-        
-                            <li>
-                                <a href="#services">Послуги</a>
-                            </li>
-                        </ul>
-                    </div>
+                
+                        <div  class="footer_nav">
+                            <ul id="footer-menu">
+                                <li>
+                                    <a href="#advices">Наші переваги</a>
+                                </li>
+            
+                                <li>
+                                    <a href="#contnact">Контакти</a>
+                                </li>
+            
+                                <li>
+                                    <a href="#destination">Популярні напрямки</a>
+                                </li>
+            
+                                <li>
+                                    <a href="#services">Послуги</a>
+                                </li>
+                            </ul>
+                        </div>
+                   
         
                     <div class="footer_adress">
                         <ul>
@@ -571,6 +573,22 @@
                 top = $(id).offset().top;
             $('body,html').animate({ scrollTop: top }, 1080);
         });
+    });
+
+</script>
+
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#footer-menu").on("click", "a", function (event) {
+            event.preventDefault();
+            var id = $(this).attr('href'),
+                top = $(id).offset().top;
+            $('body,html').animate({ scrollTop: top }, 1080);
+        });
+     
+      
     });
 
 </script>
