@@ -796,7 +796,9 @@ footer {
 
 @media (max-width: 769px) {
   .footer_logo_block_s {
-    margin-right: 20px; } }
+    margin-right: 20px; }
+  .footer_numbers {
+    margin-left: 35px; } }
 
 @media (max-width: 421px) {
   .footer_content {
@@ -813,4 +815,5 @@ footer {
     justify-content: center; }
   .footer_numbers {
     padding: 0;
-    padding-top: 15px; } }
+    padding-top: 15px;
+    margin: 0; } }

@@ -53,6 +53,11 @@ footer {
     display: flex;
 }
 
+.header_left_s {
+    display: -ms-flexbox;
+    display: flex;
+}
+
 .logo_block {
     margin-top: 5px;
     margin-right: 52px;
@@ -304,6 +309,10 @@ footer {
 }
 
 @media (max-width: 770px) {
+    .dropdown-child a {
+        padding: 0  20px;
+    }
+
     .nav {
         padding: 5px;
     }
@@ -1100,12 +1109,26 @@ footer {
     }
 }
 
+@media (max-width: 769px) {
+    .footer_logo_block_s {
+        margin-right: 20px;
+    }
+}
+
 @media (max-width: 421px) {
     .footer_content {
         display: block;
     }
 
     .footer_logo_block {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+    .footer_logo_block_s {
+        margin-right: 0px;
         display: -ms-flexbox;
         display: flex;
         -ms-flex-pack: center;
