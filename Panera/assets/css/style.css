@@ -1,0 +1,201 @@
+body {
+    background-color: white;
+    font-size: 21px;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    min-width: 1720px;
+    max-width: 1720px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.navbar {
+    padding-top: 10px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.header_logo {
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 44px;
+    color: #000000;
+}
+
+.header_logo span {
+    position: relative;
+    top: -25px;
+    margin-left: 18px;
+}
+
+.navigation {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.navigation li {
+    list-style: none;
+    margin-left: 90px;
+}
+
+.navigation li a {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+}
+
+.header_bottom {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.header_left {
+    width: 50%;
+    margin-left: 120px;
+}
+
+.header_left h2 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 78px;
+    color: #000000;
+}
+
+.header_left h2 span {
+    font-weight: 700;
+}
+
+.header_left a {
+    background: #FFD600;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 19px 83px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    color: #000000;
+}
+
+.header_left a:hover {
+    background: #FFB800;
+}
+
+.header_right img {
+    width: 822px;
+    height: 787px;
+}
+
+.header_description {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 44px;
+    color: #000000;
+    padding-bottom: 40px;
+}
+
+.specification {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: rgba(0, 0, 0, 0.5);
+    margin-top: 50px;
+}
+
+.food_menu h2 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 78px;
+    color: #000000;
+    margin-left: 630px;
+    width: 627px;
+}
+
+.food_list {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 46px;
+    grid-row-gap: 23px;
+    margin-bottom: 55px;
+}
+
+.food_item {
+    width: 395px;
+    height: 505px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.food_item img {
+    width: 395px;
+    height: 300px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.food_item_bottom {
+    padding: 26px 12px;
+}
+
+.food_item_bottom h4 {
+    margin: 0;
+    margin-bottom: 20px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+}
+
+.food_rating img {
+    width: 22px;
+    height: 22px;
+}
+
+.food_price {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 44px;
+    color: #000000;
+    margin: 0;
+    margin-top: 34px;
+}
+
+.load_more {
+    display: block;
+    width: 215px;
+    border-color: transparent;
+    background: #FFD600;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    padding: 21px 109px;
+    margin-left: 710px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 44px;
+    color: #000000;
+}
