@@ -9,7 +9,7 @@ const cat1 = document.querySelector('#c1'); //random letter
 
 
 cat1.addEventListener('click',(e)=>{
-    curr_cat.style.visibility = 'visible';
+    curr_cat.style.display = 'flex';
     categories.style.display = 'none';
 });
 
@@ -60,6 +60,7 @@ resetCookieButton.addEventListener('click',()=>{
 function deleteCookie(name){
     document.cookie=name+'=; expires='+Date()+';'+'path=/;';
     characters = letters;
+    console.log("deleteCookie");
 }
 
 
