@@ -36,11 +36,20 @@ body {
     font-weight: 700;
     color: #8BD5FC;
 }
+.back_to_main{
+    font-size: 35px;
+    display: none;
+}
 
 .content{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
+    
+}
+.content span{
+    color: white;
 }
 
 .categories{
