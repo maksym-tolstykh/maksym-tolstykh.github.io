@@ -17,6 +17,11 @@ body {
     overflow: hidden;
 }
 
+.btn{
+    width: 250px;
+    height: 75px;
+}
+
 .top{
     height: 50px;
     background-color: #23527E;
@@ -89,10 +94,8 @@ body {
     color: white;
     font-size: 120px;
 }
-#generete_letter_button{
-    width: 250px;
-    height: 75px;
-}
+
+
 
 
 @media screen and (max-width: 412px) {
