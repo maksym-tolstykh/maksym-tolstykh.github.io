@@ -19,6 +19,7 @@ cat1.addEventListener('click', (e) => {
 //#region Категорія "Генерація букв"
 const genereteLetterButton = document.querySelector('#generete_letter_button');
 const resetCookieButton = document.querySelector('#reset_cookie_btn');
+const allLetters = document.querySelector('.all_letters');
 
 const charCookie = document.cookie.match(new RegExp(
     "(?:^|; )" + "characters".replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
@@ -34,6 +35,7 @@ else {
     resetCookieButton.style.display = "none";
     genereteLetterButton.style.display = "block";
 }
+allLetters.innerHTML=characters;
 
     /*Кнопка генерації букв */
 genereteLetterButton.addEventListener('click', () => {
@@ -45,10 +47,11 @@ genereteLetterButton.addEventListener('click', () => {
     }
 
     let result = characters.charAt(Math.floor(Math.random() * characters.length));
-    const resultTag = document.querySelector('.curr_cat p');
+    const resultTag = document.querySelector('.generated_letters');
     characters = characters.replace(result, "")
     resultTag.innerHTML = (result);
-    document.cookie = "characters" + "=" + encodeURIComponent(characters);
+    allLetters.innerHTML=characters;
+    document.cookie = "characters" + "=" + encodeURIComponent(characters)+"; max-age=7200;";
 });
 resetCookieButton.addEventListener('click', () => {
     console.log("reset");

@@ -36,6 +36,9 @@ body {
     font-weight: 700;
     color: #8BD5FC;
 }
+#backbtn:hover{
+    cursor: pointer;
+}
 .back_to_main{
     font-size: 35px;
     display: none;
@@ -103,6 +106,10 @@ body {
     margin-bottom: 20px;
     color: white;
     font-size: 120px;
+}
+.all_letters{
+    font-size: 22px!important;
+    height:20px!important;
 }
 
 
