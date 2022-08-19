@@ -1,0 +1,126 @@
+body {
+    max-width: 468px;
+    min-width: 362px;
+    height: 100vh;
+    padding: 0;
+    margin: 0 auto;
+    background-color: #fff;
+    font-family:  'Comfortaa', cursive, sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    background-color: #253A57;
+    /*border: 5px solid #253A57;*/
+    border-radius: 40px;
+    overflow: hidden;
+}
+
+.btn{
+    width: 250px;
+    height: 75px;
+}
+
+.top{
+    height: 50px;
+    background-color: #23527E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 4px solid white;
+}
+.top h1{
+    text-transform: uppercase;
+    font-size: 32px;
+    font-weight: 700;
+    color: #8BD5FC;
+}
+#backbtn:hover{
+    cursor: pointer;
+}
+.back_to_main{
+    font-size: 35px;
+    display: none;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.content span{
+    color: white;
+}
+
+.categories{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+    
+}
+.cat_item{
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    padding: 5px;
+    border: 3px solid white;
+    border-radius: 10px;
+    margin: 10px 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    
+}
+.cat_item:hover{
+    background-color: #23527E;
+}
+.cat_item p{
+    color: #fff;
+    font-size: 100%;
+    text-align: center;
+}
+.cat_item_icon{
+    display: none;
+    width: 70%;
+    height: 70%;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    background-color: tomato;
+}
+
+.curr_cat{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.curr_cat p{
+    height: 95px;
+    margin-top: 35px;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 120px;
+}
+.all_letters{
+    font-size: 22px!important;
+    height:20px!important;
+}
+
+
+
+
+@media screen and (max-width: 412px) {
+    body{
+        max-width: 100vw;
+        
+    }
+    .container{
+        border-radius: 0;
+    }
+}
