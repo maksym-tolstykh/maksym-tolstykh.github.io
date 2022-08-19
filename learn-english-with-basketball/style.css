@@ -108,7 +108,7 @@ body {
     font-size: 120px;
 }
 .all_letters{
-    font-size: 22px!important;
+    font-size: auto!important;
     height:20px!important;
 }
 
